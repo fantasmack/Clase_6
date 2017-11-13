@@ -1,0 +1,116 @@
+* { box-sizing: border-box; }
+
+body {
+	background-color: #fff;
+	color: #333333;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif; 
+}
+
+p {
+	margin-bottom: 5px;
+	text-align: justify;
+}
+
+p::-moz-selection { 
+	background-color: yellow;
+	color: black;
+}
+
+a { text-decoration: none; }
+
+h2 {
+	color: #EE3440;
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1024px;
+	min-width: 300px;
+	width: 90%;
+}
+
+.wrapper h1 {
+	border-bottom: 1px solid #f2f2f2;
+	margin-bottom: 25px;
+	padding-bottom: 10px;
+}
+main#main-wrapper {
+	background-color: #fff;
+	box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.09);
+	height: 600px;
+	margin-top: 80px;
+	overflow-y: scroll;
+	padding: .9rem;
+}
+
+nav {
+	background-color: #fff;
+	border: 1px solid #E4E4E4;
+	color: #000;
+	height: 60px;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+nav ul { padding: 0; }
+
+nav a { color: #262626; }
+
+nav li {
+	display: block;
+	float: left;
+	height: 100%;
+	list-style-type: none;
+	width: 20%;
+}
+
+/*Este es el submenu con la propiedad display none la ocultamos */
+nav li > ul {
+	background-color: #fff;
+	border: 1px solid #F8F9F9;
+	display: none;
+	float: left;
+	font-size: 13px;
+	position: relative;
+	top: -2px;
+}
+/*-----*/
+
+/*Aqui lo mostramos con el hover*/
+nav li:hover > ul { display: block; }
+
+nav li > ul li { border-bottom: 1px solid #f2f2f2; }
+
+
+nav li a {
+	display: block;
+	font-weight: 600;
+	height: 60px;
+	padding: 1rem;
+	text-transform: uppercase;
+}
+
+nav li a:hover { color: #EE3440; }
+
+nav li > ul > li { width: 100%; }
+
+#social {
+	bottom: 10px;
+	color: #EE3440;
+	font-size: 20px;
+	left: 10px;
+	position: absolute;
+	z-index: 2;
+}
+
+#position p:nth-child(odd){
+	font-weight: bold;
+	font-size: 16px;
+
+}

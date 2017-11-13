@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-LA">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<meta name="description" content="Clase 6 , nav y position">
+	<link rel="stylesheet" href="css/reset.css">	
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/fuentes.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>Clase 6</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html" title="Home">Home</a></li>
+				<li><a href="#nav" title="Nav">Nav</a></li>
+				<li>
+					<a href="#position" title="Position">Position</a>
+					<!--Este es el submenu se mantiene oculto y al hacer el hover se muestra-->
+					<ul>
+						<li><a href="#static" title="Static">Static</a></li>
+						<li><a href="#relative" title="Relative">Relative</a></li>
+						<li><a href="#absolute" title="Absolute">Absolute</a> </li>
+						<li><a href="#fixed" title="Fixed">Fixed</a></li>
+						<li><a href="#sticky" title="Sticky">Sticky</a></li>
+					</ul>
+					<!--fin-->
+				</li>
+				<li><a href="#selection" title="Selection">Selection</a></li>
+				<li><a href="#over" title="Overflow">Overflow</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--Redes , se aplica position absolute-->
+	<div id="social">
+		<ul>
+			<li><a class="icon-github" href="https://github.com/fantasmack" title="github" target="_blank"></a></li>
+			<li><a class="icon-codepen" href="https://codepen.io/Fantasmack/#"  title="Codepen" target="_blank"></a></li>
+			<li><a class="icon-firefox" href="https://developer.mozilla.org/es/" title="Mozilla"  target="_blank"></a></li>
+		</ul>
+	</div>
+	<!--Fin-->
+	<main class="wrapper" id="main-wrapper">
+		<h1>Clase 6 - Nav, Position, Overflow y Selection.</h1>
+		<section id="nav">
+			<h2>Nav</h2>
+			<p>El elemento HTML &lt;nav&gt; representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de contenido e índices.</p>
+
+			<p>No todos los enlaces de un documento deben estar en un elemento &lt; nav &gt; que está destinado solo al bloque principal de enlaces de navegación; por lo general, el elemento &lt; footer &gt; a menudo tiene una lista de enlaces que no necesitan estar en un elemento &lt; nav &gt;.Un documento puede tener varios elementos &lt; nav &gt;, por ejemplo, uno para la navegación del sitio y otro para la navegación dentro de la página.</p>
+			
+			<p>Ejemplo:</p>
+<pre>
+	&lt;nav class="menu"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+</pre>
+		</section>
+		<section id="position">
+			<h2>Position</h2>
+			<p>La propiedad de CSS position ofrece reglas alternativas para el posicionamiento de elementos, ha sido diseñada para los efectos de animación con secuencias de comandos</p>
+			<p id="static">Static :</p>
+			<p>Esta palabra reservada permite que el elemento utilice el comportamiento normal. Las propiedades top, right, bottom, left and z-index no se aplican.</p>
+			<p id="relative">Relative :</p> 
+    		<p>Dispone todos los elementos como si el elemento no tuviera posición y luego ajusta la posición del elemento sin alterar la disposición (por tanto dejando un vacío donde debería estar el elemento si no estuviera posicionado).</p>
+    		<p id="absolute">Absolute :</p> 
+    		<p>No deja espacio para el elemento. En su lugar, lo posiciona en unas coordenadas determinadas relativas a la posición más cercana de su elemento padre o del bloque contenedor inicial.</p>
+			<p id="fixed">Fixed :</p> 
+    		<p>No deja espacio para el elemento. En su lugar, lo posiciona en unas coordenadas determinadas relativas a la ventana de visualización, que no se mueve al moverse la página. (O cuando se imprime, la posición es fija en cada página ).</p>
+			<p id="sticky">Sticky :</p> 
+    		<p>La posición de la caja se calcula de acuerdo con el flujo normal.</p>
+		</section>
+		<section id="selection">
+			<h2>::Selection</h2>
+			<p>El pseudo-elemento CSS :: selection aplica estilos a la parte de un documento que ha sido resaltada por el usuario (como con el mouse).</p>
+		</section>
+		<section id="over">
+			<h2>Overflow</h2>
+			<p>La propiedad overflow especifica qué ocurre si el contenido desborda la caja de un elemento.
+			Esta propiedad especifica si se recorta el contenido o añadir barras de desplazamiento cuando el contenido de un elemento es demasiado grande para caber en un área especificada.</p>
+		</section>
+	</main>
+	<script src="js/main.js"></script>
+</body>
+</html>
